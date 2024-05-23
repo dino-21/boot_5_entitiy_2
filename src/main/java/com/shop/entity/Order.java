@@ -1,7 +1,7 @@
 package com.shop.entity;
 
 
-import com.shop.constant.Orderstatus;
+import com.shop.constant.OrderStatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,7 +27,7 @@ public class Order  extends BaseEntity{
     private LocalDateTime orderDate; //주문일
 
     @Enumerated(EnumType.STRING)
-    private Orderstatus orderstatus;  //주문상태
+    private OrderStatus orderStatus;  //주문상태
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL,
             orphanRemoval = true, fetch = FetchType.LAZY)
