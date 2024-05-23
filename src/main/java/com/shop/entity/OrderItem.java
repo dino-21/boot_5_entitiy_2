@@ -31,7 +31,7 @@ public class OrderItem extends BaseEntity{
 
     private int orderPrice;  //주문가격
 
-    private int Count;  //수량
+    private int count;  //수량
 
    // private LocalDateTime regTime;
 
